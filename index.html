@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 67 - Functions in Detail</title>
+    <style></style>
+    <script></script>
+  </head>
+  <body>
+    <script>
+      /*Function functionName(){
+            //code here
+        }*/
+
+      //this is global variable
+
+      let b = document.querySelector("body");
+      function myFunction() {
+        //this is valid function name
+        console.log(b); //statement1
+        let h1 = document.createElement("h1");
+        h1.append(
+          "Covid isnt over': At high-level meet, PM Modi calls for ramped up testing, genome sequencing"
+        );
+        b.append(h1);
+      }
+      //function calling
+      myFunction();
+
+      //Append vs Prepend
+    </script>
+
+    <script>
+      //1Function defination
+      function myFunctionB(n2) {
+        let h1 = document.createElement("h1");
+        h1.append(n2);
+        b.append(h2);
+      }
+      //function calling
+      myFunctionB(
+        "Dombivli police arrest three from Delhi in loan sanction fraud"
+      );
+    </script>
+    <script>
+      //1 function defination
+      function myFunctionC(n3 = "Govt to probe rat killing scam in BMC") {
+        //this is the example of default argument.
+        let h3 = document.createElement("h1");
+        h3.append(n3);
+        b.append(h3);
+      }
+      myFunctionC();
+    </script>
+    <script>
+      //function defination
+      function myFunctionD(
+        n4 = "Just one match won't get him ahead of Axar': Karthik calls Kuldeep Yadav's 2nd Test axe 'fair' in massive statement"
+      ) {
+        let h4 = document.createElement("h1");
+        h4.append(n4);
+        b.append(h4);
+      }
+
+      myFunctionD(
+        "Most famous YouTuber MrBeast asks 'Can I be new Twitter CEO?', Elon Musk says..."
+      );
+    </script>
+    <script>
+      //function defination
+      function myFunctionE() {
+        return "India, China talk past each other on Depsang and Demchok";
+      }
+      let n5 = myFunctionE();
+      let h5 = document.createElement("h1");
+      h5.append(n5);
+      b.append(h5);
+    </script>
+    <script>
+      //function defination
+      let y = function myFunctionF() {
+        console.log("hello from function");
+      };
+      //function Calling
+      //   myFunctionF();
+
+      let z = function myFunctionG() {
+        console.log("Santosh");
+      };
+      y();
+      z();
+    </script>
+  </body>
+</html>
